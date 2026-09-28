@@ -1,0 +1,22 @@
+
+INSTANCE_NAME	 STATUS
+---------------- ------------
+FREE		 OPEN
+
+1 row selected.
+
+
+NAME	  OPEN_MODE
+--------- --------------------
+FREE	  READ WRITE
+
+1 row selected.
+
+
+NAME																 OPEN_MODE
+-------------------------------------------------------------------------------------------------------------------------------- ----------
+FREEPDB1															 READ WRITE
+PDB$SEED															 READ ONLY
+
+2 rows selected.
+
