@@ -7,7 +7,7 @@ source config.env
 set +a
 
 : "${ORACLEPWD:?Falta ORACLEPWD en config.env}"
-: "${APPUSERPWD:?Falta APPUSERPWD en config.env}"
+: "${APP_USER_PWD:?Falta APP_USER_PWD en config.env}"
 
 if docker ps -a --format '{{.Names}}' | grep -qx "$CONT_NAME"; then
   echo "El contenedor $CONT_NAME ya existe; no se crea de nuevo."
@@ -21,7 +21,7 @@ docker run -d \
   -p "${PORT_ORDS}:8181" \
   -e ORACLE_PWD="$ORACLEPWD" \
   -e APP_USER=alumno \
-  -e APP_USER_PASSWORD="$APPUSERPWD" \
+  -e APP_USER_PASSWORD="$APP_USER_PWD" \
   -v "${VOL_NAME}:/opt/oracle/oradata" \
   "$IMG"
 
