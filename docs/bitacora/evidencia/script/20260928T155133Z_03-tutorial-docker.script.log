@@ -1,0 +1,217 @@
+Script started on 2026-09-28 17:51:33+02:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="156" LINES="41"]
+[?2004h]0;liria@LIRIA: ~/oracle-database-lab[01;32mliria@LIRIA[00m:[01;34m~/oracle-database-lab[00m$ [7mdocker version[27mdocker version
+[?2004lClient:
+ Version:           29.8.1
+ API version:       1.56
+ Go version:        go1.26.8
+ Git commit:        4a63305
+ Built:             Tue Sep 15 16:24:42 2026
+ OS/Arch:           linux/amd64
+ Context:           default
+
+Server: Docker Desktop 4.93.0 (240920)
+ Engine:
+  Version:          29.8.1
+  API version:      1.56 (minimum version 1.40)
+  Go version:       go1.26.8
+  Git commit:       464cd50
+  Built:            Tue Sep 15 16:25:38 2026
+  OS/Arch:          linux/amd64
+  Experimental:     false
+ containerd:
+  Version:          v2.3.5
+  GitCommit:        1294c24a7da8e5a793ed378161673abe94118892
+ runc:
+  Version:          1.5.1
+  GitCommit:        v1.5.1-0-g8f2685a4
+ docker-init:
+  Version:          0.19.0
+  GitCommit:        de40ad0
+[?2004h]0;liria@LIRIA: ~/oracle-database-lab[01;32mliria@LIRIA[00m:[01;34m~/oracle-database-lab[00m$ [7mdocker info[27mdocker info
+[?2004lClient:
+ Version:    29.8.1
+ Context:    default
+ Debug Mode: false
+ Plugins:
+  agent: Docker AI Agent Runner (Docker Inc.)
+    Version:  v1.141.0
+    Path:     /usr/local/lib/docker/cli-plugins/docker-agent
+  ai: Docker AI Agent - Ask Gordon (Docker Inc.)
+    Version:  v1.31.0
+    Path:     /usr/local/lib/docker/cli-plugins/docker-ai
+  buildx: Docker Buildx (Docker Inc.)
+    Version:  v0.37.1
+    Path:     /usr/local/lib/docker/cli-plugins/docker-buildx
+  compose: Docker Compose (Docker Inc.)
+    Version:  v5.5.1
+    Path:     /usr/local/lib/docker/cli-plugins/docker-compose
+  debug: Get a shell into any image or container (Docker Inc.)
+    Version:  0.0.47
+    Path:     /usr/local/lib/docker/cli-plugins/docker-debug
+  desktop: Docker Desktop commands (Docker Inc.)
+    Version:  v0.4.4
+    Path:     /usr/local/lib/docker/cli-plugins/docker-desktop
+  dhi: CLI for managing Docker Hardened Images (Docker Inc.)
+    Version:  v0.0.7
+    Path:     /usr/local/lib/docker/cli-plugins/docker-dhi
+  extension: Manages Docker extensions (Docker Inc.)
+    Version:  v0.2.31
+    Path:     /usr/local/lib/docker/cli-plugins/docker-extension
+  init: Creates Docker-related starter files for your project (Docker Inc.)
+    Version:  v1.4.0
+    Path:     /usr/local/lib/docker/cli-plugins/docker-init
+  mcp: Docker MCP Plugin (Docker Inc.)
+    Version:  v0.43.3
+    Path:     /usr/local/lib/docker/cli-plugins/docker-mcp
+  model: Docker Model Runner (Docker Inc.)
+    Version:  v1.2.6
+    Path:     /usr/local/lib/docker/cli-plugins/docker-model
+  offload: Docker Offload (Docker Inc.)
+    Version:  v0.6.33
+    Path:     /usr/local/lib/docker/cli-plugins/docker-offload
+  pass: Docker Pass Secrets Manager Plugin (beta) (Docker Inc.)
+    Version:  v0.2.2
+    Path:     /usr/local/lib/docker/cli-plugins/docker-pass
+  sandbox: "docker sandbox" is deprecated, use Docker Sandboxes instead (Docker Inc.)
+    Version:  v0.13.0
+    Path:     /usr/local/lib/docker/cli-plugins/docker-sandbox
+  scout: Docker Scout (Docker Inc.)
+    Version:  v1.24.0
+    Path:     /usr/local/lib/docker/cli-plugins/docker-scout
+
+Server:
+ Containers: 0
+  Running: 0
+  Paused: 0
+  Stopped: 0
+ Images: 1
+ Server Version: 29.8.1
+ Storage Driver: overlayfs
+  driver-type: io.containerd.snapshotter.v1
+ Logging Driver: json-file
+ Cgroup Driver: cgroupfs
+ Cgroup Version: 2
+ Plugins:
+  Volume: local
+  Network: bridge host ipvlan macvlan null overlay
+  Log: awslogs fluentd gcplogs gelf journald json-file local splunk syslog
+ CDI spec directories:
+  /etc/cdi
+  /var/run/cdi
+ Discovered Devices:
+  cdi: docker.com/gpu=webgpu
+ Swarm: inactive
+ Runtimes: io.containerd.runc.v2 nvidia runc
+ Default Runtime: runc
+ Init Binary: docker-init
+ containerd version: 1294c24a7da8e5a793ed378161673abe94118892
+ runc version: v1.5.1-0-g8f2685a4
+ init version: de40ad0
+ Security Options:
+  seccomp
+   Profile: builtin
+  cgroupns
+ Kernel Version: 6.18.33.2-microsoft-standard-WSL2
+ Operating System: Docker Desktop
+ OSType: linux
+ Architecture: x86_64
+ CPUs: 4
+ Total Memory: 5.788GiB
+ Name: docker-desktop
+ ID: 2326b86b-7a36-44c4-8517-6298f672fa5c
+ Docker Root Dir: /var/lib/docker
+ Debug Mode: false
+ HTTP Proxy: http.docker.internal:3128
+ HTTPS Proxy: http.docker.internal:3128
+ No Proxy: hubproxy.docker.internal
+ Labels:
+  com.docker.desktop.address=unix:///var/run/docker-cli.sock
+ Experimental: false
+ Insecure Registries:
+  hubproxy.docker.internal:5555
+  ::1/128
+  127.0.0.0/8
+ Live Restore Enabled: false
+ Firewall Backend: iptables
+
+[?2004h]0;liria@LIRIA: ~/oracle-database-lab[01;32mliria@LIRIA[00m:[01;34m~/oracle-database-lab[00m$ [7mdocker run hello-world[27mdocker run hello-world
+[?2004l
+Hello from Docker!
+This message shows that your installation appears to be working correctly.
+
+To generate this message, Docker took the following steps:
+ 1. The Docker client contacted the Docker daemon.
+ 2. The Docker daemon pulled the "hello-world" image from the Docker Hub.
+    (amd64)
+ 3. The Docker daemon created a new container from that image which runs the
+    executable that produces the output you are currently reading.
+ 4. The Docker daemon streamed that output to the Docker client, which sent it
+    to your terminal.
+
+To try something more ambitious, you can run an Ubuntu container with:
+ $ docker run -it ubuntu bash
+
+Share images, automate workflows, and more with a free Docker ID:
+ https://hub.docker.com/
+
+For more examples and ideas, visit:
+ https://docs.docker.com/get-started/
+
+[?2004h]0;liria@LIRIA: ~/oracle-database-lab[01;32mliria@LIRIA[00m:[01;34m~/oracle-database-lab[00m$ [7mdocker ps[27mdocker ps
+[?2004lCONTAINER ID   IMAGE     COMMAND   CREATED   STATUS    PORTS     NAMES
+[?2004h]0;liria@LIRIA: ~/oracle-database-lab[01;32mliria@LIRIA[00m:[01;34m~/oracle-database-lab[00m$ [7mdocker ps -a[27mdocker ps -a
+[?2004lCONTAINER ID   IMAGE         COMMAND    CREATED         STATUS                     PORTS     NAMES
+6844825e11a9   hello-world   "/hello"   9 seconds ago   Exited (0) 8 seconds ago             musing_kepler
+[?2004h]0;liria@LIRIA: ~/oracle-database-lab[01;32mliria@LIRIA[00m:[01;34m~/oracle-database-lab[00m$ [7mdocker pull alpine:3.20[27mdocker pull alpine:3.20
+[?2004l3.20: Pulling from library/alpine
+
+[1A[2K25f1d6b1951a: Pulling fs layer [1B
+[1A[2K3a030ca3f633: Download complete [1B
+[1A[2Kd4050d56ebf2: Download complete [1B[3A[2K25f1d6b1951a: Downloading [==============>                                    ]  1.049MB/3.63MB[3B[3A[2K25f1d6b1951a: Downloading [==============>                                    ]  1.049MB/3.63MB[3B[3A[2K25f1d6b1951a: Downloading [==============>                                    ]  1.049MB/3.63MB[3B[3A[2K25f1d6b1951a: Downloading [==============>                                    ]  1.049MB/3.63MB[3B[3A[2K25f1d6b1951a: Downloading [==============>                                    ]  1.049MB/3.63MB[3B[3A[2K25f1d6b1951a: Downloading [==============>                                    ]  1.049MB/3.63MB[3B[3A[2K25f1d6b1951a: Downloading [==============>                                    ]  1.049MB/3.63MB[3B[3A[2K25f1d6b1951a: Downloading [==============>                                    ]  1.049MB/3.63MB[3B[3A[2K25f1d6b1951a: Downloading [============================>                      ]  2.097MB/3.63MB[3B[3A[2K25f1d6b1951a: Downloading [============================>                      ]  2.097MB/3.63MB[3B[3A[2K25f1d6b1951a: Downloading [============================>                      ]  2.097MB/3.63MB[3B[3A[2K25f1d6b1951a: Downloading [============================>                      ]  2.097MB/3.63MB[3B[3A[2K25f1d6b1951a: Downloading [============================>                      ]  2.097MB/3.63MB[3B[3A[2K25f1d6b1951a: Downloading [============================>                      ]  2.097MB/3.63MB[3B[3A[2K25f1d6b1951a: Downloading [============================>                      ]  2.097MB/3.63MB[3B[3A[2K25f1d6b1951a: Downloading [============================>                      ]  2.097MB/3.63MB[3B[3A[2K25f1d6b1951a: Downloading [===========================================>       ]  3.146MB/3.63MB[3B[3A[2K25f1d6b1951a: Downloading [===========================================>       ]  3.146MB/3.63MB[3B[3A[2K25f1d6b1951a: Downloading [===========================================>       ]  3.146MB/3.63MB[3B[3A[2K25f1d6b1951a: Downloading [==================================================>]   3.63MB/3.63MB[3B[3A[2K25f1d6b1951a: Download complete [3B[3A[2K25f1d6b1951a: Extracting 1 s[3B[3A[2K25f1d6b1951a: Pull complete [3BDigest: sha256:d9e853e87e55526f6b2917df91a2115c36dd7c696a35be12163d44e6e2a4b6bc
+Status: Downloaded newer image for alpine:3.20
+docker.io/library/alpine:3.20
+[?2004h]0;liria@LIRIA: ~/oracle-database-lab[01;32mliria@LIRIA[00m:[01;34m~/oracle-database-lab[00m$ [7mdocker images[27mdocker images
+[?2004l                                                                                                                                        [1m[106m[30mi[0m[0m [96mInfo → [0m[0m [38;5;0m[48;5;14m U [0m In Use
+[39m[1mIMAGE[0m                [39m[1mID[0m             [39m[1mDISK USAGE[0m   [39m[1mCONTENT SIZE[0m   [39m[1mEXTRA[0m
+[34m[1malpine:3.20[0m          [39md9e853e87e55[0m       [39m12.2MB[0m         [39m3.71MB[0m        
+[34m[1mhello-world:latest[0m   [39m5e2309035332[0m       [39m25.9kB[0m         [39m9.49kB[0m   [38;5;0m[48;5;14m U [0m  
+[?2004h]0;liria@LIRIA: ~/oracle-database-lab[01;32mliria@LIRIA[00m:[01;34m~/oracle-database-lab[00m$ [7mdocker run --rm alpine:3.20 cat /etc/os-release[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cdocker run --rm alpine:3.20 cat /etc/os-release
+[?2004lNAME="Alpine Linux"
+ID=alpine
+VERSION_ID=3.20.10
+PRETTY_NAME="Alpine Linux v3.20"
+HOME_URL="https://alpinelinux.org/"
+BUG_REPORT_URL="https://gitlab.alpinelinux.org/alpine/aports/-/issues"
+[?2004h]0;liria@LIRIA: ~/oracle-database-lab[01;32mliria@LIRIA[00m:[01;34m~/oracle-database-lab[00m$ [7mdocker ps -a[27mdocker ps -a
+[?2004lCONTAINER ID   IMAGE         COMMAND    CREATED              STATUS                          PORTS     NAMES
+6844825e11a9   hello-world   "/hello"   About a minute ago   Exited (0) About a minute ago             musing_kepler
+[?2004h]0;liria@LIRIA: ~/oracle-database-lab[01;32mliria@LIRIA[00m:[01;34m~/oracle-database-lab[00m$ [7mdocker run -d --name alpine-lab alpine:3.20 sleep 600[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cdocker run -d --name alpine-lab alpine:3.20 sleep 600
+[?2004l155d6e70a76049a8b2677d9de1a70123e006a66cfc4a9c56755fce05da0acfc6
+[?2004h]0;liria@LIRIA: ~/oracle-database-lab[01;32mliria@LIRIA[00m:[01;34m~/oracle-database-lab[00m$ [7mdocker ps[27mdocker ps
+[?2004lCONTAINER ID   IMAGE         COMMAND       CREATED                  STATUS                  PORTS     NAMES
+155d6e70a760   alpine:3.20   "sleep 600"   Less than a second ago   Up Less than a second             alpine-lab
+[?2004h]0;liria@LIRIA: ~/oracle-database-lab[01;32mliria@LIRIA[00m:[01;34m~/oracle-database-lab[00m$ [7mdocker exec alpine-lab cat /etc/os-release[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cdocker exec alpine-lab cat /etc/os-release
+[?2004lNAME="Alpine Linux"
+ID=alpine
+VERSION_ID=3.20.10
+PRETTY_NAME="Alpine Linux v3.20"
+HOME_URL="https://alpinelinux.org/"
+BUG_REPORT_URL="https://gitlab.alpinelinux.org/alpine/aports/-/issues"
+[?2004h]0;liria@LIRIA: ~/oracle-database-lab[01;32mliria@LIRIA[00m:[01;34m~/oracle-database-lab[00m$ [7mdocker ps[27mdocker ps
+[?2004lCONTAINER ID   IMAGE         COMMAND       CREATED          STATUS          PORTS     NAMES
+155d6e70a760   alpine:3.20   "sleep 600"   29 seconds ago   Up 29 seconds             alpine-lab
+[?2004h]0;liria@LIRIA: ~/oracle-database-lab[01;32mliria@LIRIA[00m:[01;34m~/oracle-database-lab[00m$ [7mdocker stop alpine-lab[27mdocker stop alpine-lab
+[?2004lalpine-lab
+[?2004h]0;liria@LIRIA: ~/oracle-database-lab[01;32mliria@LIRIA[00m:[01;34m~/oracle-database-lab[00m$ [7mdocker ps -a[27mdocker ps -a
+[?2004lCONTAINER ID   IMAGE         COMMAND       CREATED          STATUS                      PORTS     NAMES
+155d6e70a760   alpine:3.20   "sleep 600"   53 seconds ago   Exited (137) 1 second ago             alpine-lab
+6844825e11a9   hello-world   "/hello"      2 minutes ago    Exited (0) 2 minutes ago              musing_kepler
+[?2004h]0;liria@LIRIA: ~/oracle-database-lab[01;32mliria@LIRIA[00m:[01;34m~/oracle-database-lab[00m$ [7mdocker rm alpine-lab[27mdocker rm alpine-lab
+[?2004lalpine-lab
+[?2004h]0;liria@LIRIA: ~/oracle-database-lab[01;32mliria@LIRIA[00m:[01;34m~/oracle-database-lab[00m$ [7mdocker ps -a[27mdocker ps -a
+[?2004lCONTAINER ID   IMAGE         COMMAND    CREATED         STATUS                     PORTS     NAMES
+6844825e11a9   hello-world   "/hello"   2 minutes ago   Exited (0) 2 minutes ago             musing_kepler
+[?2004h]0;liria@LIRIA: ~/oracle-database-lab[01;32mliria@LIRIA[00m:[01;34m~/oracle-database-lab[00m$ [7mexit[27mexit
+[?2004lexit
+
+Script done on 2026-09-28 17:55:49+02:00 [COMMAND_EXIT_CODE="0"]

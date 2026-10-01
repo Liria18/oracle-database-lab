@@ -1,0 +1,4 @@
+config/.env
+backups/
+
+config.env
