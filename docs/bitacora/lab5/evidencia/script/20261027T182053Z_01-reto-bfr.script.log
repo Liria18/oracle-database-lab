@@ -1,0 +1,12 @@
+
+Session altered.
+
+===== Reto B: filas por bloque de PEDIDO (DBMS_ROWID) frente a NUM_ROWS / BLOCKS =====
+
+BLOQUES_CON_FILAS     MINIMO	  MEDIA     MAXIMO
+----------------- ---------- ---------- ----------
+	     5220	   2	  191.6        200
+
+  NUM_ROWS     BLOCKS BFR_ESTADISTICAS
+---------- ---------- ----------------
+   1000000	 5320		   188

@@ -1,0 +1,24 @@
+
+Session altered.
+
+===== Reto F: revision de codigo. 1) Que devuelve cada rama =====
+
+   TEL_600 APELLIDOS_IGUAL_GIL PRIMER_APELLIDO_GIL SEGUNDO_APELLIDO_GIL
+---------- ------------------- ------------------- --------------------
+       981							   6121
+===== 2) Rota frente a reescrita (con indices en telefono y apellidos) =====
+F reto rota		       filas=	 981  lecturas l??gicas=   1487  f??sicas=    0     20.9 ms
+			       plan: TABLE ACCESS FULL CLIENTE
+F reto reescrita OR	       filas=	 981  lecturas l??gicas=    722  f??sicas=    0        5 ms
+			       plan: TABLE ACCESS BY INDEX ROWID BATCHED CLIENTE > BITMAP CONVERSION TO ROWIDS > BITMAP OR > BITMAP CONVERSION FROM ROWIDS > INDEX RANGE SCAN IX_CLI_APELLIDOS > BITMAP
+CONVERSION FROM ROWIDS > SORT ORDER BY > INDEX RANGE SCAN IX_CLI_TELEFONO
+F reto reescrita UNION	       filas=	 981  lecturas l??gicas=    986  f??sicas=    0      3.4 ms
+			       plan: HASH UNIQUE > UNION-ALL > TABLE ACCESS BY INDEX ROWID BATCHED CLIENTE > INDEX RANGE SCAN IX_CLI_TELEFONO > TABLE ACCESS BY INDEX ROWID BATCHED CLIENTE > INDEX RANG
+E SCAN IX_CLI_APELLIDOS
+F reto solo telefono	       filas=	 981  lecturas l??gicas=    984  f??sicas=    0      2.8 ms
+			       plan: TABLE ACCESS BY INDEX ROWID BATCHED CLIENTE > INDEX RANGE SCAN IX_CLI_TELEFONO
+===== 3) Limpieza =====
+
+INDICES_TIENDASUR
+-----------------
+		7

@@ -1,0 +1,25 @@
+
+Session altered.
+
+===== Reto C: UX_CLI_EMAIL medido (prediccion a mano: ~417 hojas, altura 2) =====
+
+NAME																     ALTURA	 HOJAS
+-------------------------------------------------------------------------------------------------------------------------------- ---------- ----------
+     RAMAS ENTRADAS_RAMA BYTES_ENTRADA_HOJA BYTES_ENTRADA_RAMA	   FO_MAX   PCT_USED
+---------- ------------- ------------------ ------------------ ---------- ----------
+UX_CLI_EMAIL																  3	   501
+	 3	     500	       35.9		  18.2	      441	  90
+
+===== Orden de creacion de los indices de TiendaSur =====
+
+OBJECT_NAME															 CREADO
+-------------------------------------------------------------------------------------------------------------------------------- --------
+CLIENTE 															 18:19:43
+PK_CLIENTE															 18:19:43
+PEDIDO																 18:19:43
+PK_PEDIDO															 18:19:43
+UX_CLI_EMAIL															 18:19:48
+IX_CLI_PAIS_CIUDAD														 18:19:48
+IX_PED_CLIENTE															 18:19:48
+IX_PED_FECHA															 18:19:49
+IX_PED_IMPORTE															 18:19:49
