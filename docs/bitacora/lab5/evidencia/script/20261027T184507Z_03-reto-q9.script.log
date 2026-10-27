@@ -1,0 +1,11 @@
+
+Session altered.
+
+===== Reto D: Q9, los 20 pedidos mas recientes con todas sus columnas =====
+Q9 actual (ix_ped_fecha)       filas=	  20  lecturas l??gicas=      5  f??sicas=    0       .2 ms
+			       plan: COUNT STOPKEY > VIEW > TABLE ACCESS BY INDEX ROWID PEDIDO > INDEX FULL SCAN DESCENDING IX_PED_FECHA
+
+SEGMENT_NAME																 MB
+-------------------------------------------------------------------------------------------------------------------------------- ----------
+IX_PED_FECHA																 22
+PEDIDO																	 42
