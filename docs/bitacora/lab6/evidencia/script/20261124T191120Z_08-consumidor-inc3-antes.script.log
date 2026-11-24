@@ -1,0 +1,10 @@
+== EVIDENCIA alumno=E033 hora=2026-11-24T19:11:20Z origen=08-consumidor
+== EVIDENCIA contenedor=e80caab80b6e dbid=1509902213 arranque=2026-11-24T18:58:45 scn=10459444
+Connection failed
+  USER          = app_academia
+  URL           = jdbc:oracle:thin:@//localhost:1521/academia_app
+  Error Message = ORA-28000: The account is locked; login denied.
+
+https://docs.oracle.com/error-help/db/ora-28000/
+
+SP2-0640: Not connected

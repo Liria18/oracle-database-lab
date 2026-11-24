@@ -1,0 +1,9 @@
+== EVIDENCIA alumno=E033 hora=2026-11-24T19:10:19Z origen=08-consumidor
+== EVIDENCIA contenedor=e80caab80b6e dbid=1509902213 arranque=2026-11-24T18:58:45 scn=10459323
+Connection failed
+  USER          = app_academia
+  URL           = jdbc:oracle:thin:@//localhost:1521/academia_app
+  Error Message = ORA-12514: Cannot connect to database. Service academia_app is not registered with the listener at host localhost port 1521. (CONNECTION_ID=HWypvyn0TbCTFna31KColw==)
+https://docs.oracle.com/error-help/db/ora-12514/
+
+SP2-0640: Not connected
