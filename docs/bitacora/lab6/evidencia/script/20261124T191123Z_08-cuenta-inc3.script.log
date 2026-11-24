@@ -1,0 +1,21 @@
+== EVIDENCIA alumno=E033 hora=2026-11-24T19:11:23Z origen=08-cuenta-inc3
+== EVIDENCIA contenedor=e80caab80b6e dbid=1509902213 arranque=2026-11-24T18:58:45 scn=10459448
+
+Session altered.
+
+
+USERNAME       PROFILE	    ACCOUNT_STATUS   LOCK_DATE
+-------------- ------------ ---------------- -------------------
+APP_ACADEMIA   DEFAULT	    LOCKED	     2026-11-24 19:11:17
+
+
+RESOURCE_NAME			 LIMIT
+-------------------------------- ----------
+FAILED_LOGIN_ATTEMPTS		 10
+PASSWORD_LOCK_TIME		 1
+
+
+HORA	 DBUSERNAME ACTION_NAME  SQL_TEXT
+-------- ---------- ------------ --------------------------------------------------
+19:11:17 SYS	    ALTER USER	 ALTER USER app_academia ACCOUNT LOCK
+
