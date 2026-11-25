@@ -1,0 +1,9 @@
+== EVIDENCIA alumno=E033 hora=2026-11-25T17:41:34Z origen=t6/fra
+== EVIDENCIA contenedor=e80caab80b6e dbid=1509902213 arranque=2026-11-25T17:28:44 scn=10546680
+FILE_TYPE		PCT_USADO   ARCHIVOS
+---------------------- ---------- ----------
+ARCHIVED LOG		    19.69	  13
+BACKUP PIECE		     1.81	   4
+ LIMITE_MB   USADO_MB	     PCT
+---------- ---------- ----------
+      4096	  881	    21.5
