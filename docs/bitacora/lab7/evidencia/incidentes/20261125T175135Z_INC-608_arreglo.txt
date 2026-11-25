@@ -1,0 +1,60 @@
+== EVIDENCIA alumno=E033 hora=2026-11-25T17:51:35Z origen=INC-608_arreglo
+== EVIDENCIA contenedor=e80caab80b6e dbid=1509902213 arranque=2026-11-25T17:28:44 scn=10558488
+
+Session altered.
+
+
+METHOD_OPT_ANTES
+----------------------------------------------------------------------------------------------------------------------------------------------------------------
+FOR ALL COLUMNS SIZE 1
+
+
+PL/SQL procedure successfully completed.
+
+
+PL/SQL procedure successfully completed.
+
+
+PL/SQL procedure successfully completed.
+
+
+Session altered.
+
+
+Explained.
+
+
+PLAN_TABLE_OUTPUT
+----------------------------------------------------------------------------------------------------------------------------------------------------------------
+Plan hash value: 1767728868
+
+-------------------------------------------------------------------------
+| Id  | Operation			     | Name		| Rows	|
+-------------------------------------------------------------------------
+|   0 | SELECT STATEMENT		     |			|     1 |
+|   1 |  SORT AGGREGATE 		     |			|     1 |
+|   2 |   TABLE ACCESS BY INDEX ROWID BATCHED| PEDIDO		| 20000 |
+|   3 |    INDEX RANGE SCAN		     | IX_T6_PED_ESTADO | 20000 |
+-------------------------------------------------------------------------
+
+10 rows selected.
+
+
+Session altered.
+
+
+PL/SQL procedure successfully completed.
+
+
+PL/SQL procedure successfully completed.
+
+
+METHOD_OPT_DESPUES
+----------------------------------------------------------------------------------------------------------------------------------------------------------------
+FOR ALL COLUMNS SIZE 1 FOR COLUMNS ESTADO SIZE 254
+
+
+COLUMN_NAME															 HISTOGRAM
+-------------------------------------------------------------------------------------------------------------------------------- ---------------
+ESTADO																 FREQUENCY
+

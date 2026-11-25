@@ -2,3 +2,4 @@ config/.env
 backups/
 
 config.env
+scripts/t6/salidas/

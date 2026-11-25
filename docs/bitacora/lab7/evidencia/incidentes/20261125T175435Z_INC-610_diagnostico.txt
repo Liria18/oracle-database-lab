@@ -1,0 +1,15 @@
+== EVIDENCIA alumno=E033 hora=2026-11-25T17:54:35Z origen=INC-610_diagnostico
+== EVIDENCIA contenedor=e80caab80b6e dbid=1509902213 arranque=2026-11-25T17:28:44 scn=10558901
+
+Session altered.
+
+== Parámetros del optimizador cambiados en la PDB (ISDEFAULT = FALSE) ==
+
+no rows selected
+
+== Guardados en el SPFILE de la PDB ==
+
+NAME				 VALUE
+-------------------------------- ------------
+optimizer_index_cost_adj	 4100
+

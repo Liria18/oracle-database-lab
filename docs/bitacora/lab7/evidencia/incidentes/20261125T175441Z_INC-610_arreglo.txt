@@ -1,0 +1,28 @@
+== EVIDENCIA alumno=E033 hora=2026-11-25T17:54:41Z origen=INC-610_arreglo
+== EVIDENCIA contenedor=e80caab80b6e dbid=1509902213 arranque=2026-11-25T17:28:44 scn=10558904
+
+Session altered.
+
+
+System altered.
+
+
+System altered.
+
+
+NAME
+--------------------------------------------------------------------------------
+VALUE
+--------------------------------------------------------------------------------
+ISDEFAULT
+---------
+optimizer_index_cost_adj
+100
+TRUE
+
+
+
+ EN_SPFILE
+----------
+	 0
+

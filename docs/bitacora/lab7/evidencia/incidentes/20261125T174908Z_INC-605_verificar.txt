@@ -1,0 +1,10 @@
+== EVIDENCIA alumno=E033 hora=2026-11-25T17:49:08Z origen=t6/INC-605_verificar
+== EVIDENCIA contenedor=e80caab80b6e dbid=1509902213 arranque=2026-11-25T17:28:44 scn=10556621
+== INC-605 · verificar · alumno E033 · semilla 33
+
+Session altered.
+
+OK    Incidente INC-605 roto para E033 (semilla 33) el 2026-11-25 17:49 · cesta con 183000 filas nuevas
+FALLO Estadísticas de CESTA: 100 filas frente a 183100 reales
+FALLO El informe une con HASH JOIN (sin bucles anidados por cada cesta)
+INFO  Estadísticas de CESTA bloqueadas ahora: ALL (válido si están al día; justifícalo en la bitácora)

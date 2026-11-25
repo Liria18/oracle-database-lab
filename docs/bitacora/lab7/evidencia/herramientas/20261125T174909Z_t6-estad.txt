@@ -1,0 +1,42 @@
+== EVIDENCIA alumno=E033 hora=2026-11-25T17:49:09Z origen=t6/estad
+== EVIDENCIA contenedor=e80caab80b6e dbid=1509902213 arranque=2026-11-25T17:28:44 scn=10557978
+== 1 · Estadísticas de la tabla T6.CESTA ==
+
+TABLE_NAME           NUM_ROWS     BLOCKS AVG_ROW_LEN LAST_ANALYZED       STALE LOCKED
+------------------ ---------- ---------- ----------- ------------------- ----- ------
+CESTA                     100          5          16 2026-11-25 17:49:06 YES   ALL
+== 2 · Cambios desde la última recogida (DBA_TAB_MODIFICATIONS; obsoleta si pasan del 10 %) ==
+
+   INSERTS    UPDATES    DELETES TRU PCT_CAMBIO
+---------- ---------- ---------- --- ----------
+    183000          0          0 NO      183000
+== 3 · Columnas: lo que sabe el optimizador de cada una ==
+
+COLUMN_NAME                    NUM_DISTINCT  NUM_NULLS   DENSITY    BUCKETS HISTOGRAM       LAST_ANALYZED
+------------------------------ ------------ ---------- --------- ---------- --------------- -------------------
+ID_CLIENTE                              100          0  0.010000          1 NONE            2026-11-25 17:49:06
+ID_PEDIDO                               100          0  0.010000          1 NONE            2026-11-25 17:49:06
+TS                                        1          0  1.000000          1 NONE            2026-11-25 17:49:06
+== 4 · Extensiones (grupos de columnas y expresiones) ==
+== 5 · Estadísticas PENDIENTES (recogidas con PUBLISH = FALSE, aún sin publicar) ==
+== 6 · Historial: versiones anteriores que se pueden restaurar ==
+
+CUANDO
+-------------------
+2026-11-25 17:49:06
+2026-11-25 17:49:06
+== 7 · Preferencias que usará la próxima recogida ==
+
+PREFERENCIA
+-------------
+VALOR
+----------------------------------------------------------------------------------------------------------------------------------
+PUBLISH
+TRUE
+
+METHOD_OPT
+FOR ALL COLUMNS SIZE AUTO
+
+STALE_PERCENT
+10
+
