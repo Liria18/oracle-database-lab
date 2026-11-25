@@ -1,0 +1,36 @@
+== EVIDENCIA alumno=E033 hora=2026-11-25T17:40:19Z origen=t6/C12_provocar
+== EVIDENCIA contenedor=e80caab80b6e dbid=1509902213 arranque=2026-11-25T17:28:44 scn=10542339
+
+SYS@FREE> ALTER SESSION SET CONTAINER = FREEPDB1;
+
+Session altered.
+
+SYS@FREE> SET ECHO OFF SERVEROUTPUT OFF
+
+PL/SQL procedure successfully completed.
+
+Table created.
+
+100 rows created.
+
+Commit complete.
+
+PL/SQL procedure successfully completed.
+
+== La carga nocturna: 200 000 líneas de carrito más (sin recoger estadísticas al final) ==
+
+200000 rows created.
+
+Commit complete.
+
+== A primera hora: el informe de conversión ==
+(la herramienta de informes abre su sesión con optimizer_adaptive_plans = FALSE, como pide su proveedor)
+
+Session altered.
+
+RESULTADO
+--------------------------------------------------------------------------------------------------------------
+Informe ejecutado en 209 ms con 212364 lecturas lógicas
+
+1 row selected.
+
