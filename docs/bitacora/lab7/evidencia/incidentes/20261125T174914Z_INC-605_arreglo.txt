@@ -1,0 +1,16 @@
+== EVIDENCIA alumno=E033 hora=2026-11-25T17:49:14Z origen=INC-605_arreglo
+== EVIDENCIA contenedor=e80caab80b6e dbid=1509902213 arranque=2026-11-25T17:28:44 scn=10557980
+
+Session altered.
+
+
+PL/SQL procedure successfully completed.
+
+
+PL/SQL procedure successfully completed.
+
+
+  NUM_ROWS STALE_S BLOQU
+---------- ------- -----
+    183100 NO	   NO
+

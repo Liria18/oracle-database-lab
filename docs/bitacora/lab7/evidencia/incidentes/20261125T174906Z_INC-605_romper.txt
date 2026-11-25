@@ -1,0 +1,7 @@
+== EVIDENCIA alumno=E033 hora=2026-11-25T17:49:06Z origen=t6/INC-605_romper
+== EVIDENCIA contenedor=e80caab80b6e dbid=1509902213 arranque=2026-11-25T17:28:44 scn=10556597
+== INC-605 · romper · alumno E033 · semilla 33
+
+Session altered.
+
+Roto: el informe de cestas abandonadas (módulo informes) ya no es el de ayer.

@@ -1,0 +1,45 @@
+== EVIDENCIA alumno=E033 hora=2026-11-25T17:51:18Z origen=t6/estad
+== EVIDENCIA contenedor=e80caab80b6e dbid=1509902213 arranque=2026-11-25T17:28:44 scn=10558481
+== 1 · Estadísticas de la tabla T6.PEDIDO ==
+
+TABLE_NAME           NUM_ROWS     BLOCKS AVG_ROW_LEN LAST_ANALYZED       STALE LOCKED
+------------------ ---------- ---------- ----------- ------------------- ----- ------
+PEDIDO                1000000       5312          32 2026-11-25 17:51:12 NO
+== 2 · Cambios desde la última recogida (DBA_TAB_MODIFICATIONS; obsoleta si pasan del 10 %) ==
+== 3 · Columnas: lo que sabe el optimizador de cada una ==
+
+COLUMN_NAME                    NUM_DISTINCT  NUM_NULLS   DENSITY    BUCKETS HISTOGRAM       LAST_ANALYZED
+------------------------------ ------------ ---------- --------- ---------- --------------- -------------------
+CANAL                                     3          0  0.333333          1 NONE            2026-11-25 17:51:12
+CODIGO_POSTAL                         11000          0  0.000091          1 NONE            2026-11-25 17:51:12
+ESTADO                                    4          0  0.250000          1 NONE            2026-11-25 17:51:12
+FECHA_PEDIDO                         994048          0  0.000001          1 NONE            2026-11-25 17:51:12
+ID_CLIENTE                           100816          0  0.000010          1 NONE            2026-11-25 17:51:12
+ID_PEDIDO                           1000000          0  0.000001          1 NONE            2026-11-25 17:51:12
+IMPORTE                               49908          0  0.000020          1 NONE            2026-11-25 17:51:12
+== 4 · Extensiones (grupos de columnas y expresiones) ==
+== 5 · Estadísticas PENDIENTES (recogidas con PUBLISH = FALSE, aún sin publicar) ==
+== 6 · Historial: versiones anteriores que se pueden restaurar ==
+
+CUANDO
+-------------------
+2026-11-25 17:51:13
+2026-11-25 17:45:56
+2026-11-25 17:45:49
+2026-11-25 17:40:43
+2026-11-25 17:40:38
+== 7 · Preferencias que usará la próxima recogida ==
+
+PREFERENCIA
+-------------
+VALOR
+----------------------------------------------------------------------------------------------------------------------------------
+PUBLISH
+TRUE
+
+METHOD_OPT
+FOR ALL COLUMNS SIZE 1
+
+STALE_PERCENT
+10
+
